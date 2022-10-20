@@ -3,7 +3,7 @@ import { getUserRoute } from './getUserRoute'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: () => import('../views/HomeView.vue'),
     meta: {
@@ -11,8 +11,8 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: '/auth',
-    name: 'auth',
+    path: '/login',
+    name: 'login',
     component: () => import('../views/AuthView.vue'),
   },
 ]
